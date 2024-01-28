@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Job Application</h1>
+            <p>Please complete the form below to apply for a position with us.</p>
+        </div>
+        <hr>
+        <div class="main">
+            <form action="send_form.php">
+                <div>
+                    <label for="firstname" class="required title">First Name</label>
+                    <div class="flex-row items-3">
+                        <div>
+                            <input type="text" id="firstname" required><br>
+                            <label for="firstname">First Name</label>
+                        </div>
+                        <div>
+                            <input type="text" id="middlename"><br>
+                            <label for="middlename">Middle Name</label>
+                        </div>                        
+                        <div>
+                            <input type="text" id="lastname" required><br>
+                            <label for="lastname">First Name</label>
+                        </div>
+                    </div>
+                    
+                </div><br>
+
+                <div>
+                    <label for="height" class="required title">Body Size</label>
+                    <div class="flex-row items-2">
+                        <div>
+                            <input type="number" name="height" id="height" required><br>
+                            <label for="height">Height</label>
+                        </div>
+                        <div>
+                            <input type="number" name="weight" id="weight" required><br>
+                            <label for="weight">Weight</label>
+                        </div>
+                    </div>
+                    
+                </div><br>
+
+                <div>
+                    <label for="month" class="title">Birth Date</label>
+                    
+                    <div class="flex-row items-3">
+                        <div>
+                            <select name="month" id="month">
+                                <option value="Please select">Please select a month</option>
+                                <option value="01">January</option>
+                                <option value="02">February</option>
+                                <option value="03">March</option>
+                                <option value="04">April</option>
+                                <option value="05">May</option>
+                                <option value="06">June</option>
+                                <option value="07">July</option>
+                                <option value="08">August</option>
+                                <option value="09">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select><br>
+                            <label for="month">Month</label>
+                        </div>
+                        <div>
+                            <select name="day" id="day">
+                                <option value="Please select">Please select a Day</option>
+                                <option value="01">1</option>
+                                <option value="02">2</option>
+                                <option value="03">3</option>
+                                <option value="04">4</option>
+                                <option value="05">5</option>
+                                <option value="06">6</option>
+                                <option value="07">7</option>
+                                <option value="08">8</option>
+                                <option value="09">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select><br>
+                            <label for="day">Day</label>
+                        </div>
+                        <div>
+                            <select name="year" id="year">
+                                <option value="Please select">Please select a Year</option>
+                                <option value="2024">2024</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                                <option value="2016">2016</option>
+                                <option value="2015">2015</option>
+                                <option value="2014">2014</option>
+                            </select><br>
+                            <label for="year">Year</label>
+                        </div>
+                    </div>
+                </div><br>
+
+                <div>
+                    <label for="divorced" class="title">Family status</label>
+                    <div class="family-status">
+                        <div>
+                            <input type="radio" name="family-status" id="divorced">
+                            <label for="divorced">Divorced</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="family-status" id="married">
+                            <label for="married">Married</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="family-status" id="single">
+                            <label for="single">Single</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="family-status" id="other">
+                            <label for="other">Other</label>
+                        </div>
+                    </div>
+                </div><br>
+                
+                <div>
+                    <label for="street-address"  class="title">Current Address</label>
+                    <div class="items-1">
+                        <input type="text" name="street-address" id="street-address"><br>
+                        <label for="street-address">Street Adress</label>
+                    </div><br>
+                    <div class="items-1">
+                        <input type="text" name="street-address-line-2" id="street-address-line-2"><br>
+                        <label for="street-address-line-2">Street Adress Line 2</label>
+                    </div><br>
+                    <div class="flex-row items-2">
+                        <div>
+                            <input type="text" name="state" id="city"><br>
+                            <label for="city">City</label>
+                        </div>
+                        <div>
+                            <input type="text" name="state" id="state"><br>
+                            <label for="state">State/Province</label>
+                        </div>
+                    </div><br>
+                    <div class="items-2">
+                        <input type="text" name="postal-code" id="postal-code" ><br>
+                        <label for="postal-code">Postal/ Zip Code</label>
+                    </div>
+                </div><br>
+                <div class="flex-row">
+                    <div class="items-2">
+                        <label for="email" class="title">Email Address</label>
+                        <div>
+                            <input type="email" name="email" id="email" placeholder="ex: myname@example.com"><br>
+                            <label for="email">ex: myname@example.com</label>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="area-code" class="title">Phone number</label>
+                        <div class="flex-row">
+                            <div class="items-2_30">
+                                <input type="number" name="area-code" id="area-code" placeholder="90"><br>
+                                <label for="area-code">Area Code</label>
+                            </div>
+                            <div class="items-2_70">
+                                <input type="number" name="phone" id="phone" placeholder="9000909"><br>
+                                <label for="phone">Phone number</label>
+                            </div>
+                        </div>
+                    </div>
+                </div><br>
+
+                <div class="flex-row items-2">
+                    <div>                        
+                        <label for="linkedin" class="title">LinkedIn</label><br>
+                        <input type="text" name="linkedin" id="linkedin">
+                    </div>
+                    <div>
+                        <label for="experience" class="title">Experience</label><br>
+                        <input type="number" name="experince" id="experience">
+                    </div>
+                    
+                </div><hr>
+                <div class="flex-row items-2">
+                    <div>
+                        <label for="position" class="title">Position Applied</label><br>
+                        <select name="position" id="position">
+                            <option value="">Please select</option>
+                            <option value="developer">Developer</option>
+                            <option value="sales-manager">Sales Manager</option>
+                            <option value="marketing">Marketing Specialist</option>
+                            <option value="team-lead">Team Lead</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="how-heard" class="title">How did you hear about us</label><br>
+                        <select name="how-heard" id="how-heard">
+                            <option value="-">Please select</option>
+                            <option value="friends">From Friends</option>
+                            <option value="ad">Advertisement</option>
+                        </select>
+                    </div>
+                </div><br>
+                <div class="items-2">
+                    <label for="start-date" class="title">Available start date</label><br>
+                    <input type="date" name="start-date" id="start-date">
+                </div><br>
+                <div class="">
+                    <label for="xsl-beginner" class="title">Computer skills</label>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td class="hide-me"></td>
+                                <td class="l-t-10">Beginner</td>
+                                <td>Elementary</td>
+                                <td>Advanced</td>
+                                <td class="r-t-10">Expert</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="l-t-10"><label for="xsl-beginner">Excel</label></td>
+                                <td><input type="radio" name="excel" id="xsl-beginner"></td>
+                                <td><input type="radio" name="excel" id="xsl-elementary"></td>
+                                <td><input type="radio" name="excel" id="xsl-advanced"></td>
+                                <td><input type="radio" name="excel" id="xsl-expert"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="wrd-beginner">Word</label></td>
+                                <td><input type="radio" name="word" id="wrd-beginner"></td>
+                                <td><input type="radio" name="word" id="wrd-elementary"></td>
+                                <td><input type="radio" name="word" id="wrd-advanced"></td>
+                                <td><input type="radio" name="word" id="wrd-expert"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="1c-beginner">1C</label></td>
+                                <td><input type="radio" name="1c" id="1c-beginner"></td>
+                                <td><input type="radio" name="1c" id="1c-elementary"></td>
+                                <td><input type="radio" name="1c" id="1c-advanced"></td>
+                                <td><input type="radio" name="1c" id="1c-expert"></td>
+                            </tr>
+                            <tr>
+                                <td class="l-b-10"><label for="pl-beginner">Programming Language</label></td>
+                                <td><input type="radio" name="programming-language" id="pl-beginner"></td>
+                                <td><input type="radio" name="programming-language" id="pl-elementary"></td>
+                                <td><input type="radio" name="programming-language" id="pl-advanced"></td>
+                                <td class="r-b-10"><input type="radio" name="programming-language" id="pl-expert"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><br>
+                <div>
+                    <label for="rev-score-1" class="title">Ability knowing English Language</label>
+                    <div class="reviewing">
+                        <input type="radio" name="reviewing" id="rev-score-1">
+                        <label for="rev-score-1">1</label>
+                        <input type="radio" name="reviewing" id="rev-score-2">
+                        <label for="rev-score-2">2</label>
+                        <input type="radio" name="reviewing" id="rev-score-3">
+                        <label for="rev-score-3">3</label>
+                        <input type="radio" name="reviewing" id="rev-score-4">
+                        <label for="rev-score-4">4</label>
+                        <input type="radio" name="reviewing" id="rev-score-5">
+                        <label for="rev-score-5">5</label>
+                    </div>
+                </div><br>
+                <div>
+                    <label for="input-certificate" class="title">Applicant Document(Diploma, Certificate)</label>
+                    <div class="big-input">
+                        <label for="input-certificate">Browse Files</label><br>
+                        <label for="input-certificate">Drag and drop files here</label>
+                        <input type="file" name="upload-file" id="input-certificate" accept="image/*,.pdf,.doc,.docx">
+                    </div>
+                </div><br>
+                <div>
+                    <label for="input-resume" class="title">Upload Your Resume</label>
+                    <div class="big-input">
+                        <label for="input-resume">Browse Files</label><br>
+                        <label for="input-resume">Drag and drop files here</label>
+                        <input type="file" name="upload-file" id="input-resume" accept="image/*,.pdf,.doc,.docx">
+                    </div>
+                </div><br>
+                <div>
+                    <label for="cover-letter" class="title">Cover Letter</label>
+                    <div>
+                        <textarea name="cover-letter" id="cover-letter" cols="84" rows="5"></textarea>
+                    </div>
+                </div>
+                <hr>
+                <div class="submit">
+                    <input type="submit" value="Apply">
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</body>
+</html>

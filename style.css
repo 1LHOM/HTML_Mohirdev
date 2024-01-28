@@ -1,0 +1,244 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-color: aquamarine;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 500;
+}
+.container {
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    background-color: aliceblue;
+    padding: 50px;
+}
+
+hr {
+    margin: 30px 0 30px 0;
+
+}
+
+.required:after {
+    content:" *";
+    color: red;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    padding: 5px;
+}
+
+thead {
+    background-color: rgb(149, 207, 255);
+}
+
+tbody tr td {
+    background-color: rgb(205, 230, 250);
+    text-align: center;
+    justify-content: center;
+    border: 1px dashed rgb(0, 53, 97);
+}
+
+tbody tr td:first-child {
+    background-color: rgb(149, 207, 255);
+    text-align: left;
+    padding-left: 20px;
+    border: 0px;
+}
+
+.hide-me {
+    background-color: aliceblue;
+    border: 1px !important;
+}
+
+.r-t-10 {
+    border-radius: 0 10px 0 0;
+}
+.r-b-10 {
+    border-radius: 0 0 10px 0;
+}
+.l-t-10 {
+    border-radius: 10px 0 0 0;
+}
+.l-b-10 {
+    border-radius: 0 0 0 10px;
+}
+
+#input-certificate {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+#input-resume {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.big-input {
+    text-align: center;
+    border: 1px dashed black;
+    padding: 20px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.big-input label {
+    cursor: pointer;
+}
+
+input {
+    height: 40px;
+    border: 1px solid rgb(148, 148, 148);
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 0 10px;
+}
+
+select {
+    height: 40px;
+    border: 1px solid rgb(148, 148, 148);
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 0 10px;
+    font-size: 15px;
+}
+
+table {
+    width: 100%;
+}
+
+td input {
+    width: 25px;
+}
+
+.items-3 input {
+    width: 210px;
+}
+
+.items-3 select {
+    width: 210px;
+}
+
+.items-2 input {
+    width: 315px;
+}
+
+.items-2 select {
+    width: 315px;
+}
+
+.family-status input {
+    width: 25px;
+}
+
+.family-status label {
+    font-size: 20px;
+    position: relative;
+    bottom: 14px;
+}
+
+.items-1 input {
+    width: 650px;
+}
+
+.items-2_30 input {
+    width: 90px;
+}
+
+.items-2_70 input {
+    width: 220px;
+    
+}
+.items-2_70 {
+    margin-left: 10px;
+}
+
+
+.reviewing input{
+    width: 40px;
+}
+
+.reviewing label {
+    font-size: 20px;
+    position: relative;
+    bottom: 15px;
+    left: -30px;
+
+}
+
+.submit input {
+    width: 150px;
+    font-size: 20px;
+    margin-left: 240px;
+    background: linear-gradient(0.45turn, #9664e6, #000327);
+    color: #fff;
+}
+
+input:hover {
+    outline: none;
+    border:1px solid rgb(154, 210, 255);
+    box-shadow: 0 0 10px #a1c5eb;
+}
+
+input:focus {
+    outline: none !important;
+    border:1px solid rgb(0, 119, 255);
+    box-shadow: 0 0 10px #719ECE;
+}
+
+input[type="radio"] {
+    accent-color: rgb(0, 119, 255);
+}
+
+input[type="number"] {
+    -webkit-appearance: textfield;
+       -moz-appearance: textfield;
+            appearance: textfield;
+  }
+  input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+}
+
+.big-input {
+    background-color: rgb(217, 224, 230);
+}
+
+textarea {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+textarea:hover {
+    outline: none;
+    border:1px solid rgb(154, 210, 255);
+    box-shadow: 0 0 10px #a1c5eb;
+}
+
+textarea:focus {
+    outline: none !important;
+    border:1px solid rgb(0, 119, 255);
+    box-shadow: 0 0 10px #719ECE;
+}
